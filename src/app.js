@@ -21,20 +21,7 @@ app.get("/",(req,res)=>{
 });
 app.get("/about",(req,res)=>{
     res.render('about');
-    // res.send("Welcome about here.");
 });
-// app.get("/weather",(req,res)=>{
-//     requests(
-//         `http://api.openweathermap.org/data/2.5/weather?q=${req.query.name}&appid=1e91e2a2e0761eee9f5c633e3cb4327d`
-//     )
-//     .on("data",(chunkdata)=>{
-//         res.render('weather');
-//     })
-//     .on("end",(err)=>{
-//         console.log(`Error occured:- ${err}`);
-//         res.end();
-//     });
-// });
 
 app.get("/weather",(req,res)=>{
         res.render('weather');
